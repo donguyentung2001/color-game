@@ -19,7 +19,7 @@ function runGame() {
         document.getElementById("sth").style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
         select.addEventListener("change",runGame);
     }
-    else if (select.value.localeCompare("default")!==0) { 
+    else  { 
         result.textContent="Oops. You got it wrong. Your score is " + score;
         select.value="default";
         button=document.createElement("button"); 
@@ -38,7 +38,6 @@ function replay() {
     document.getElementById("sth").style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
     result.textContent="";
     document.getElementById("button-1").remove();
-    runGame();
 }
 
 
