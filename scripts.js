@@ -2,11 +2,12 @@ let red = Math.floor(Math.random() * 256);
 let green = Math.floor(Math.random() * 256);
 let blue = Math.floor(Math.random() * 256);
 let score=0;
+let play=true;
 
 document.getElementById("sth").style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
 let select = document.querySelector('#options');
 let result = document.querySelector('.result');
-select.addEventListener("change", runGame)
+select.addEventListener("change", run)
 function runGame() { 
     if ((red===Math.max(red,green,blue) && select.value.localeCompare("red")===0) || (green===Math.max(red,green,blue) && select.value.localeCompare("green")===0)
      || (blue===Math.max(red,green,blue) && select.value.localeCompare("blue")===0)) { 
@@ -17,7 +18,6 @@ function runGame() {
         green = Math.floor(Math.random() * 256);
         blue = Math.floor(Math.random() * 256);
         document.getElementById("sth").style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
-        select.addEventListener("change",runGame);
     }
     else  { 
         result.textContent="Oops. You got it wrong. Your score is " + score;
@@ -26,6 +26,7 @@ function runGame() {
         button.textContent="Try again!";
         button.id="button-1";
         score=0;
+        play=false;
         document.body.appendChild(button);
         button.onclick=replay;
     }
@@ -35,7 +36,13 @@ function replay() {
     green = Math.floor(Math.random() * 256);
     blue = Math.floor(Math.random() * 256);
     score=0;
+    play=true;
     document.getElementById("sth").style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
     result.textContent="";
     document.getElementById("button-1").remove();
+}
+function run() { 
+    if (play) { 
+        runGame();
+    }
 }
