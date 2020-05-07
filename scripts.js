@@ -24,7 +24,7 @@ function runGame() {
         select.value="default";
         button=document.createElement("button"); 
         button.textContent="Try again!";
-        button.id="button-1"
+        button.id="button-1";
         document.body.appendChild(button);
         button.onclick=replay;
     }
