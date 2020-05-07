@@ -6,7 +6,7 @@ let score=0;
 document.getElementById("sth").style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
 let select = document.querySelector('#options');
 let result = document.querySelector('.result');
-select.addEventListener("change", runGame)
+select.addEventListener("change", run)
 function runGame() { 
     if ((red===Math.max(red,green,blue) && select.value.localeCompare("red")===0) || (green===Math.max(red,green,blue) && select.value.localeCompare("green")===0)
      || (blue===Math.max(red,green,blue) && select.value.localeCompare("blue")===0)) { 
@@ -25,7 +25,7 @@ function runGame() {
         button=document.createElement("button"); 
         button.textContent="Try again!";
         button.id="button-1";
-        score=0;
+        score=-1;
         document.body.appendChild(button);
         button.onclick=replay;
     }
@@ -40,4 +40,8 @@ function replay() {
     document.getElementById("button-1").remove();
 }
 
-
+function run() { 
+    if (score!==-1) { 
+        runGame();
+    }
+}
