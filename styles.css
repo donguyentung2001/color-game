@@ -1,5 +1,26 @@
 html { 
     font-family:  'Lato', sans-serif;
-    margin: 200px 200px 200px 200px;
+    margin-top:30px;
+    text-align:center;
 } 
+h2 { 
+    text-align:center;
+}
+div { 
+    margin-left: 100px;
+    margin-right:100px;
+    text-align:center;
+    margin-bottom: 50px;
+}
+label {
+    margin-left:100px;
+}
+
+#sth { 
+    text-align:center;
+    height: 400px; 
+    width: 400px; 
+    margin-top: 100px; 
+    margin-left: 525px;
+}
 
