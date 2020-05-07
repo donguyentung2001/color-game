@@ -43,7 +43,7 @@ label {
         text-align:center;
         margin-bottom: 50px;
         margin-right: 250px;
-        margin-left: -200px;
+        margin-left: -100px;
     }
     label {
         text-align:center;
@@ -59,6 +59,6 @@ label {
     #button-1 { 
         font-size: 18px;
         padding: 10px;
-        margin-left:-200px;
+        margin-left:-100px;
     }
 }
