@@ -28,7 +28,7 @@ label {
     padding: 10px;
 }
 
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 1024px) { 
     html { 
         margin-top:30px;
         font-family:  'Lato', sans-serif;
