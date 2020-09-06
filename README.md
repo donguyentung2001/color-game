@@ -6,13 +6,17 @@ Every color can be written in RGB code, which has the form of (degree of red, de
 <img width="691" alt="Screen Shot 2020-09-05 at 11 26 36 PM" src="https://user-images.githubusercontent.com/54921286/92317514-6af60c00-efcf-11ea-9fe9-1209a26d75b8.png">
 
 You can choose one color you think is the right answer. 
+
 <img width="674" alt="Screen Shot 2020-09-05 at 11 26 45 PM" src="https://user-images.githubusercontent.com/54921286/92317515-6c273900-efcf-11ea-9cab-439e686cd491.png">
 
 You are correct! Let's try another one. You have a score of 1. 
+
 <img width="595" alt="Screen Shot 2020-09-05 at 11 26 55 PM" src="https://user-images.githubusercontent.com/54921286/92317516-6e899300-efcf-11ea-8b95-c3daeb0bf113.png">
 
 You are correct again! You have a score of 2.
+
 <img width="607" alt="Screen Shot 2020-09-05 at 11 27 03 PM" src="https://user-images.githubusercontent.com/54921286/92317517-6fbac000-efcf-11ea-9f0d-5d587ff1eeea.png">
 
 You got it wrong. The game is over.
+
 <img width="545" alt="Screen Shot 2020-09-05 at 11 27 11 PM" src="https://user-images.githubusercontent.com/54921286/92317518-70535680-efcf-11ea-876f-96727dd382e5.png">
